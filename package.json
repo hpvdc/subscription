@@ -22,8 +22,11 @@
   },
   "homepage": "https://github.com/realizehit/subscription",
   "dependencies": {
-    "debug": "^2.2.0",
-    "findhit-util": "^0.2.7"
+    "debug": "~2.2.0",
+    "findhit-util": "~0.2.7",
+    "crypto": "0.0.3",
+    "events": "~1.0.2",
+    "chai": "~3.0.0"
   },
   "devDependencies": {
     "chai": "^2.3.0",
