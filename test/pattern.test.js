@@ -37,7 +37,7 @@ describe( 'Pattern', function () {
 
         pattern.add( 'user', chunk );
 
-        expect( pattern.parse() ).to.be.equal( "user:"+ chunk );
+        expect( pattern.parse() ).to.be.equal( "user:"+chunk );
     });
 
     it( 'should throw errors parsing empty filters', function () {
@@ -45,9 +45,9 @@ describe( 'Pattern', function () {
 
         pattern.add( 'channel', '' );
 
-        expect(function () {
-            return pattern.parse();
-        }).to.throw( TypeError );    });
+        expect( pattern.parse() )
+        .to.throw( TypeError );
+    });
 
     it( 'should throw errors parsing spaced filters', function () {
         var pattern = new Pattern();
